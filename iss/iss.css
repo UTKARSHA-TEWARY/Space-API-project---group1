@@ -1,0 +1,146 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+html {
+    cursor: url('./Images/favicon_io/sat.png'), auto;
+  }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  "Poppins", sans-serif;
+}
+
+body {
+    /* background: #937ec7; */
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #000000;
+}
+
+
+#map { 
+    height: 280px; 
+    z-index: 1;
+    width: 100%;
+    height: 50%;
+}
+
+.load {
+    display: block;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.latitude,.longitude{
+    display: none;
+}
+
+
+.container {
+    color: white;
+    width: 100%;
+    height: 100vh;
+    background: #181818;
+    border-radius: 10px;
+    border: 5px solid rgb(229, 164, 13);
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.08);
+}
+
+h1{
+    color: #615e5e;
+    font-size: 3.3rem;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+	/* margin-top:-545px; */
+    text-align: center;
+	z-index: 1;
+  }
+h1 span{
+    transition: .5s linear
+  }
+h1:hover span:nth-child(1){
+    margin-right: 5px
+  }
+h1:hover span:nth-child(1):after{
+    content: "🛰️";
+  }
+/* h1:hover span:nth-child(2){
+    margin-left: 30px
+  } */
+h1:hover span{
+    color: #fff;
+    text-shadow: 0 0 5px #fff,
+                 0 0 5px #fff, 
+                 0 0 10px #fff;
+  }
+.container .details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 30px 30px 40px 30px;
+}
+
+
+.latitude{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 5px;
+    margin-right: 10px;
+    box-shadow: 10px 10px 15px rgb(0, 0, 0, 0.08);
+
+}
+
+.longitude {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.02);
+
+}
+
+.details label{
+    font-weight: 500;
+}
+
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+    
+}
+.btn{
+    border: none;
+    width: 75px;
+    background-color: #000000;
+    color: #fff;
+    box-shadow: 0px 3px 0px #fff;
+
+
+}
+.btn:active{
+    transform: translate(0px,3px);
+    box-shadow: 0 0 0 #000000;
+}
+
+
+
+
+@media (max-width: 700px){
+    .container {
+        margin: auto 20px;
+    }
+    .container h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+}
