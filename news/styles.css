@@ -1,0 +1,29 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: rgb(10, 6, 39);
+	/* background-image: url('space.jpg'); */
+}
+
+h1,
+h2,
+h4,
+h5,
+h6,
+p {
+	font-family: "Space Grotesk";
+}
+
+h1 {
+	text-align: center;
+	color: rgb(225, 227, 229);
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.card {
+	margin-bottom: 20px;
+}
+.card img {
+	height: 200px;
+	object-fit: cover;
+}
